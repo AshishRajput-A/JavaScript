@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+    <h1 id="n1"></h1>
+    <h1 id="n2"></h1>
+    <h1 id="result"></h1>
+  <script>
+    var num1 = parseFloat(prompt("Enter first value.:"));
+    document.getElementById("n1").innerText="First Number.:"+ num1;
+    
+var num2 = parseFloat(prompt("Enter second value.:"));
+document.getElementById("n2").innerText="Second Number.:"+ num2;
+// document.write("First value.:",num1);
+
+
+//document.write("Second value.:",num2);
+
+var op = prompt("Enter Operator.:");
+var result;
+
+switch (op)
+{
+    case '+': 
+      result =num1+num2;
+    // document.write("Sum.:",num1+num2)
+    document.getElementById("result").innerText="ADDITION.:"+result;
+
+    break;
+
+    case '-': 
+    result =num1-num2;
+    //document.write("Sum.:",num1-num2)
+    document.getElementById("result").innerText="SUBMISION.:"+result;
+    break;
+
+    case '*': 
+    result =num1*num2;
+    //document.write("Sum.:",num1*num2)
+    document.getElementById("result").innerText="Multiplication:"+result;
+    break;
+
+    case '/': 
+    result =num1/num2;
+    //document.write("Sum.:",num1/num2)
+    document.getElementById("result").innerText="Division.:"+result;
+    break;
+
+    default:
+        //document.write("Operator is out of range")
+        document.getElementById("result").innerText="Operator is out of range."
+
+    
+
+
+
+}
+
+
+
+
+  </script>
+
+</body>
+</html>
+

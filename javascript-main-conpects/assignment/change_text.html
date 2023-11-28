@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change_text</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+
+        h1{
+            width: 100%;
+             text-align: center;
+             margin-top: 50px;
+        }
+        .b1
+        {
+            width: 100%;
+            height: 600px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button
+        {
+            height: 35px;
+            width: 150px;
+            font-size: 18px;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">The most affordable learning platform</h1>
+    </div>         
+
+    <div class="b1" id="demo" onclick="change()">
+        <button>Click-me</button>
+    </div>
+
+    <script>
+
+        function change()
+        {
+         
+    document.getElementById("heading").innerText = "The most affordable learning platform PWSKILLS";
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car-rant</title>
+</head>
+<body>
+<h1 id="model"></h1>
+<h1 id="day"></h1>
+<h1 id="rant"></h1>
+
+<Script>
+    var m = prompt("ENTER CAR TYPE.:");
+    var d = prompt("ENTER DAY .:");
+    var r;
+   
+     document.getElementById("model").innerHTML="MODEL .:"+m.toUpperCase();
+    document.getElementById("day").innerHTML="DAY.:"+d;
+   if( m.toUpperCase() == "ECONOMY")
+   {
+    r = 4000 *  d;
+    document.getElementById("rant").innerHTML="RANT.:"+r+"RS";;
+   }
+   else if(m.toUpperCase()=="MIDSIZE")
+   {
+    r = 10000 *  d;
+    document.getElementById("rant").innerHTML="RANT.:"+r+"RS";
+
+   }
+   else if(m.toUpperCase()=="LUXURY")
+   {
+    r = 20000 *  d;
+    document.getElementById("rant").innerHTML="RANT.:"+r+"RS";;
+
+   }
+
+
+</Script>
+
+</body>
+</html>

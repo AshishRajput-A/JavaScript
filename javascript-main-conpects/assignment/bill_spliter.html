@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill-spliter</title>
+</head>
+<body>
+    <h1 id="bill"></h1>
+    <h1 id="person"></h1>
+    <h1 id="split"></h1>
+    <script>
+
+        
+      var bill = prompt("Enter Bill Price.:");
+      var person = prompt("Enter Number Of Person.:");
+      var split = bill/person;
+
+
+    //    document.write("BILL PRICE.:",bill);
+    //   document.write("NUMBER OF PERSON",person);
+    //   document.write("SPLIT AMMOUNT.:",split);
+    document.getElementById("bill").innerHTML="BILL PRICE.:"+bill;
+    document.getElementById("person").innerHTML="NUMER OF PERSON.:"+person;
+    document.getElementById("split").innerHTML="SPLIT AMMOUNT.:"+ split+" Rupee per head";
+
+    </script>
+
+</body>
+</html>
