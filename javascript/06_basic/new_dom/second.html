@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: #fff"></body>
+
+  <script>
+    const element = document.createElement("div");
+    console.log(element);
+
+    // element.title = "notes";
+    element.className = "main";
+    element.id = Math.floor(Math.random() * 10 + 1);
+    element.setAttribute("title", "generated title"); // when we use setattribute it can directly change a name it can't work on first get name then it change.
+    element.style.backgroundColor = "blue";
+    element.style.padding = "20px";
+
+    const addtext = document.createTextNode("Ashish is good developer.");
+    element.appendChild(addtext);
+    // element.innerText = "hello dear notes";
+    document.body.appendChild(element);
+  </script>
+</html>

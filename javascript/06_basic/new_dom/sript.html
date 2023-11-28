@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom chai with code</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <div class="perent">
+      <!-- hello my love -->
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+    <script>
+      const perent = document.querySelector(".perent");
+      //   console.log(perent);
+
+      //   console.log(perent.children); // it giver us a collection  that is array like properte. and proprty giver us childrean.
+
+      //   console.log(perent.children[2].innerText); // give use inner value in tags.
+
+      //creating a loop for perent element
+      for (let i = 0; i < perent.children.length; i++) {
+        // console.log(perent.children[i].innerText);
+      }
+
+      //   perent.children[0].style.color = "red"; //adding a style in element
+
+      //   console.log(perent.firstElementChild.innerHTML); //gives us first element child.
+
+      //   console.log(perent.lastElementChild.innerHTML); // gives a last element child .
+
+      const dayone = document.querySelector(".day");
+      //   console.log(dayone);
+      //   console.log(dayone.parentElement); // giver a perent element.
+      //   console.log(dayone.nextElementSibling); // giver next value of child element.
+      console.log("nodes .:", perent.childNodes);
+    </script>
+  </body>
+</html>

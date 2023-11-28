@@ -1,0 +1,64 @@
+<!-- // event Bubbling -->
+<!-- event propogation is by default false. 
+    when we use event propogation false it execute inner event first.
+    when we use event propogation true it execute outer event firs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    a {
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <body style="background-color: #212121; color: #fff">
+    <ul id="boys">
+      <li><a href="#" id="a">Ashish</a></li>
+      <li>
+        <a href="#" id="s">Shive</a>
+      </li>
+      <li><a href="#" id="r">Google</a></li>
+      <li><a href="#" id="as">Ashish Sharma</a></li>
+    </ul>
+  </body>
+  <script>
+    document.querySelector("#boys").addEventListener(
+      "click",
+      (e) => {
+        console.log(e.target);
+        let romoveIt = e.target.parentNode;
+        romoveIt.remove();
+        removeIt.parentNode.removeChild(removeIt);
+      },
+      false
+    );
+
+    // document.getElementById("boys").addEventListener(
+    //   "click",
+    //   () => {
+    //     console.log("You Clicked in ul.");
+    //   },
+    //   false
+    // );
+
+    // document.getElementById("main").addEventListener(
+    //   "click",
+    //   (e) => {
+    //     console.log("Shiva is Clicked");
+    //     e.stopPropagation();
+    //      e.preventDefault();
+    //     // e.defaultPrevented() =>  this is not a funciton.
+    //    },
+    //   false
+    // );
+  </script>
+</html>
